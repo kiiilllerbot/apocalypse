@@ -1,0 +1,17 @@
+<%= simple_form_for @category do |f| %>
+	<p>
+		<%= f.input :user_id, as: :hidden %>
+	</p>
+	<p>
+		<%= f.input :name %>
+	</p>
+	<p>
+		<%= f.file_field :avatar %>
+	</p>
+	<p>
+		<%= f.input :description %>
+	</p>
+	<p>
+		<%= f.button :submit %>
+	</p>
+<% end %>

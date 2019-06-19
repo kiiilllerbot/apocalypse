@@ -1,0 +1,5 @@
+<% @categories.each do |cat| %>
+	<h4><%= link_to cat.name, cat %></h4>
+	<p>Created <%= cat.created_at.strftime("%b, %d, %Y")%></p>
+<% end %>
+<%= link_to "New Category", new_category_path %>

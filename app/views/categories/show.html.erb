@@ -1,0 +1,6 @@
+<h4><%= @category.name %></h4>
+<%= link_to "Back",category_path(@category) %>
+<%= link_to "Edit",edit_category_path(@category) %>
+<%= link_to "Delete",category_path,method: :delete, data:{confirm:'Are you sure?'} %>
+<%= image_tag(@category.avatar)%>
+<p><%= @category.description %></p>
